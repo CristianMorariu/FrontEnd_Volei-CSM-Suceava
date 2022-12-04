@@ -19,7 +19,7 @@ const tasks = [
   },
 ];
 
-const Noutati = () => {
+const ShortNews = () => {
   return (
     <>
       {tasks.map((item) => (
@@ -29,4 +29,4 @@ const Noutati = () => {
   );
 };
 
-export default Noutati;
+export default ShortNews;
