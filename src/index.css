@@ -14,15 +14,20 @@ h1 {
   /* GLOBAL */
   text-align: center;
 }
-.prezentare {
+/* .prezentare {
   position: absolute;
-  /* border: solid 1px red; */
+  border: solid 1px red;
   height: 400px;
   width: 300px;
-  /* left: 250px;
+  left: 250px;
   right: 250px;
-  top: 200px; */
+  top: 200px;
 }
+.prezentare img {
+  width: 200px;
+  height: auto;
+} */
+
 /* .home-main {
   border: 1px solid green;
 } */
@@ -35,4 +40,5 @@ h1 {
   cursor: pointer;
   border-radius: 50px;
   background: #5a7089;
+  color: #fff;
 }

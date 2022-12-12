@@ -1,0 +1,317 @@
+.hero-component {
+  /* width: 80rem; */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin-top: 40px;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  /* -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)); */
+  /* filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)); */
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.hero-component .card-item-img {
+  height: 439px;
+  width: 613px;
+  left: 614px;
+  top: 192px;
+  border-radius: 30px;
+
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+.hero-component .card-item-img:hover {
+  transform: scale(1.1);
+}
+.hero-component .card-item-info {
+  padding: 10px 30px;
+  /* height: 100px; */
+  position: relative;
+}
+.hero-component .card-item-text {
+  position: relative;
+  font-family: Kameron;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.hero-component .card-item-link {
+  display: flex;
+  justify-content: center;
+  text-decoration-line: none;
+}
+.hero-component .btn {
+  color: #fff;
+}
+/* ---------------/HERO COMPONENT---------------------- */
+.cards {
+  position: relative;
+  padding: 20px 2rem;
+  margin-bottom: 2rem;
+  /* background: #fff; */
+}
+.cards-container .cards-title {
+  position: absolute;
+  top: 25px;
+  left: 2.5rem;
+}
+.cards-items {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 15.1rem);
+  white-space: nowrap;
+  /* box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); */
+  /* box-shadow: rgba(56, 125, 255, 0.17) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  padding: 50px 0;
+  /* grid-template-rows: 300px; */
+  /* text-align: center; */
+  justify-content: center;
+  align-content: center;
+  /* margin-bottom: 30px; */
+  row-gap: 50px;
+}
+.cards-item {
+  /* background-color: rgb(99, 128, 102); */
+  background-color: #fff;
+  list-style: none;
+  border-radius: 30px;
+  position: relative;
+  /* display: inline-block;
+  transform: all 0.3s linear; */
+}
+
+.cards-item .card-item-img {
+  width: 315px;
+  /* position: absolute; */
+  height: 167px;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* display: inline; */
+}
+.cards-item .card-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* 
+  object-fit: cover;
+  transition: all 0.2s linear; */
+}
+.cards-item .card-image::before {
+  /* content: attr(data-category); */
+  content: "Data";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  /* justify-content: center; */
+  /* position: relative;
+  left: -277px;
+  top: 43px; */
+  /* margin-left: 10px; */
+  /* max-width: calc((100%) - 60px); */
+
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  /* box-sizing: border-box; */
+}
+/* .card-item-img:hover {
+  transform: scale(1.1);
+} */
+.cards-item .card-item-info {
+  padding-bottom: 20px;
+  /* height: 100px; */
+  /* position: relative; */
+}
+.cards-item .card-item-text {
+  position: relative;
+  color: red;
+  font-family: Kameron;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.card-item-link {
+  display: flex;
+  justify-content: center;
+  text-decoration-line: none;
+}
+/* ---------------/Noutati---------------------- */
+p {
+  /* padding-top: 20px; */
+  font-family: "Kameron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  text-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+/* .rez-meciuri-paragraf {
+  position: absolute;
+  width: 868px;
+  height: 76px;
+  left: 282px;
+  top: 1368px;
+}
+.detalii-meciuri-paragraf {
+  position: absolute;
+  width: 933px;
+  height: 76px;
+  left: 251px;
+  top: 1463px;
+} */
+
+.ultimul-si-urmatorul-meci {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.ultimul-si-urmatorul-meci img {
+  width: 494px;
+  height: 626px;
+  box-shadow: 0px 64px 64px -32px rgba(41, 15, 0, 0.56);
+  filter: drop-shadow(0px 4px 160px rgba(0, 0, 0, 0.25));
+  border-radius: 28px;
+}
+
+.content {
+  width: 494px;
+  height: 626px;
+  position: absolute;
+  top: 0;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 156%;
+
+  letter-spacing: 0.01em;
+
+  color: #f9f9ff;
+}
+/* -------------------------------------------- */
+.echipa {
+  background-color: #fff;
+  list-style: none;
+  border-radius: 30px;
+  position: relative;
+  width: 237px;
+  height: 353px;
+  padding-top: 10px;
+}
+
+.echipa .card-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.echipa .card-item-text {
+  position: relative;
+  color: #5f6b7a;
+  padding-top: 18px;
+  margin-bottom: 33px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 27px;
+
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* --------------Footer------------------ */
+.footer-title {
+  text-align: left;
+  margin-left: 30px;
+  font-family: "Almarai";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 27px;
+  padding-bottom: 20px;
+}
+.parteneri {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 60px;
+  margin: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: left; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+.contact p {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  /* or 112% */
+  margin-left: 30px;
+  padding: 3px 0;
+  color: #ffffff;
+}
+.social-icons {
+  position: absolute;
+  top: 30%;
+  right: 6%;
+  /* bottom: 1%; */
+}
+.social-icons h6 {
+  text-align: center;
+  font-family: "Kameron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  text-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+}
+.social-icons img {
+  padding: 5px;
+}
