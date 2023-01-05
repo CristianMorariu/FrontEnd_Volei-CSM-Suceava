@@ -1,7 +1,125 @@
+import Footer from "../components/Footer";
+import "./DetaliiClub.css";
 const DetaliiClub = () => {
   return (
     <div>
-      <h1>Detalii Club Page</h1>
+      {/* <h1>Detalii Club Page</h1> */}
+      <div className="istoric">
+        <div className="detalii-img">
+          <img src="images/istoric.png" alt="" />
+        </div>
+        <div className="istoric-content">
+          <h3 className="titlu">Istoric</h3>
+          <p className="detalii-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eius!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            explicabo perspiciatis alias necessitatibus pariatur iure
+            accusantium minus! Voluptatibus modi quaerat autem reiciendis quas
+            explicabo tempora, quisquam, minus doloribus sapiente recusandae.
+            Illum blanditiis autem ipsam odit consequatur aspernatur quis?
+            Totam, quibusdam quasi adipisci vel cum ducimus a, assumenda aliquid
+            doloremque pariatur enim! Ipsum ducimus adipisci ex earum quia,
+            obcaecati repellendus porro! At cupiditate accusantium in soluta
+            fuga perspiciatis placeat. Quae dignissimos distinctio quibusdam
+            suscipit labore impedit esse veniam tempora totam repellendus harum,
+            accusantium quam ea ratione ad vitae at eaque beatae! Soluta magni
+            fugiat blanditiis eum? Quia praesentium eaque esse ullam dolorum
+            minus, facilis at aspernatur incidunt reprehenderit ipsa sint quod
+            iusto odit eos sunt. Vel unde eos animi placeat sed?Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Doloribus fuga
+            necessitatibus mollitia. Doloribus nostrum sint cupiditate modi
+            dignissimos, iure voluptatibus fuga velit, praesentium impedit
+            molestiae iusto aperiam aliquid deserunt possimus! Possimus
+            asperiores obcaecati, voluptate dicta rerum perferendis eos aut
+            minima. Non mollitia ipsam odit, repellat praesentium eaque aut esse
+            excepturi sequi officia iste, quidem est fugiat, vero eum. Id,
+            itaque? Ipsum hic veritatis necessitatibus, molestias animi quae
+            nesciunt dicta ullam iure possimus quis dolorum? Magnam fugit esse
+            labore pariatur dolor repellat, cum quisquam non enim ratione quasi,
+            impedit doloremque nisi!nima. Non mollitia ipsam odit, repellat
+            praesentium eaque aut esse excepturi sequi officia iste, quidem est
+            fugiat, vero eum. Id, itaque? Ipsum hic veritatis necessitatibus,
+            molestias animi quae nesciunt dicta ullam iure possimus quis
+            dolorum? Magnam fugit esse labore pariatur dolor repellat, cum
+            quisquam non enim ratione quasi, impedit doloremque nisi!nima. Non
+            mollitia ipsam odit, repellat praesentium eaque aut esse excepturi
+            sequi officia iste, quidem est fugiat, vero eum. Id, itaque? Ipsum
+            hic veritatis necessitatibus, molestias animi quae nesciunt dicta
+            ullam iure possimus quis dolorum? Magnam fugit esse labore pariatur
+            dolor repellat, cum quisquam non enim ratione quasi, impedit
+            doloremque nisi!
+          </p>
+        </div>
+      </div>
+      <div className="viziune-trofee">
+        <div className="viziune">
+          <img src="images/viziune.png" alt="" className="detalii-img" />
+          <h3 className="titlu">Viziune</h3>
+          <p className="detalii-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            doloribus esse harum obcaecati iure natus! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Odit, eius! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Illum explicabo perspiciatis
+            alias necessitatibus pariatur iure accusantium minus! Voluptatibus
+            modi quaerat autem reiciendis quas explicabo tempora, quisquam,
+            minus doloribus sapiente recusandae. Illum blanditiis autem ipsam
+            odit consequatur aspernatur quis? Totam, quibusdam quasi adipisci
+            vel cum ducimus a, assumenda aliquid doloremque pariatur enim! Ipsum
+            ducimus adipisci ex earum quia, obcaecati repellendus porro! At
+            cupiditate accusantium in soluta fuga perspiciatis placeat. Quae
+            dignissimos distinctio quibusdam suscipit labore impedit esse veniam
+            tempora totam repellendus harum, accusantium quam ea ratione ad
+            vitae at eaque beatae! Soluta magni fugiat blanditiis eum? Quia
+            praesentium eaque esse ullam dolorum minus, facilis at aspernatur
+            incidunt reprehenderit ipsa sint quod iusto odit eos sunt. Vel unde
+            eos animi placeat sed?Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Doloribus fuga necessitatibus mollitia. Doloribus
+            nostrum sint cupiditate modi dignissimos, iure voluptatibus fuga
+            velit, praesentium impedit molestiae iusto aperiam aliquid deserunt
+            possimus! Possimus asperiores obcaecati, voluptate dicta rerum
+            perferendis eos aut minima. Non mollitia ipsam odit, repellat
+            praesentium eaque aut esse excepturi sequi officia iste, quidem est
+            fugiat, vero e
+          </p>
+        </div>
+        <div className="trofee">
+          <img src="images/trofee.png" alt="" className="detalii-img" />
+          <h3 className="titlu">Trofee</h3>
+          <p className="detalii-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+            necessitatibus nam adipisci, minus distinctio? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Odit, eius! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Illum explicabo perspiciatis
+            alias necessitatibus pariatur iure accusantium minus! Voluptatibus
+            modi quaerat autem reiciendis quas explicabo tempora, quisquam,
+            minus doloribus sapiente recusandae. Illum blanditiis autem ipsam
+            odit consequatur aspernatur quis? Totam, quibusdam quasi adipisci
+            vel cum ducimus a, assumenda aliquid doloremque pariatur enim! Ipsum
+            ducimus adipisci ex earum quia, obcaecati repellendus porro! At
+            cupiditate accusantium in soluta fuga perspiciatis placeat. Quae
+            dignissimos distinctio quibusdam suscipit labore impedit esse veniam
+            tempora totam repellendus harum, accusantium quam ea ratione ad
+            vitae at eaque beatae! Soluta magni fugiat blanditiis eum? Quia
+            praesentium eaque esse ullam dolorum minus, facilis at aspernatur
+            incidunt reprehenderit ipsa sint quod iusto odit eos sunt. Vel unde
+            eos animi placeat sed?Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Doloribus fuga necessitatibus mollitia. Doloribus
+            nostrum sint cupiditate modi dignissimos, iure voluptatibus fuga
+            velit, praesentium impedit molestiae iusto aperiam aliquid deserunt
+            possimus! Possimus asperiores obcaecati, voluptate dicta rerum
+            perferendis eos aut minima. Non mollitia ipsam odit, repellat
+            praesentium eaque aut esse excepturi sequi officia iste, quidem est
+            fugiat, vero eadipisicing elit. Doloribus fuga necessitatibus
+            mollitia. Doloribus nostrum sint cupiditate modi dignissimos, iure
+            voluptatibus fuga velit, praesentium impedit molestiae iusto aperiam
+            aliquid deserunt possimus! Possimus asperiores obcaecati, voluptate
+            dicta rerum perferendis eos aut minima. Non mollitia ipsam odit,
+            repellat praesentium eaque aut esse excepturi sequi officia iste,
+            quidem est fugiat, vero e
+          </p>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

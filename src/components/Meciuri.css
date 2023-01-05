@@ -1,0 +1,80 @@
+/* --------------Meciuri---------------------- */
+.calendarmeciuri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 130px;
+}
+.link-meciuri {
+  text-decoration: none;
+}
+.componenta-rezultate {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.data-rezultatelor {
+  /* padding-left: 10px; */
+  text-align: left;
+  font-family: "Kameron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+.componenta-rezultate img {
+  width: 91px;
+  height: 91px;
+}
+.componenta-score {
+  display: flex;
+  align-items: center;
+  gap: 59px;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+
+  width: 98px;
+  height: 48px;
+  left: 70px;
+  top: 22px;
+  /* text-align: center; */
+  background: #fffcfc;
+
+  font-family: "Carter One";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 49px;
+  text-transform: capitalize;
+  z-index: -1;
+  color: #000000;
+}
+
+.ora {
+  position: absolute;
+
+  width: 98px;
+  height: 48px;
+  left: 70px;
+  top: 22px;
+  /* text-align: center; */
+  background: #fffcfc;
+
+  font-family: "Carter One";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 49px;
+  text-transform: capitalize;
+
+  color: #000000;
+}

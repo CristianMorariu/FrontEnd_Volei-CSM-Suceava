@@ -1,0 +1,63 @@
+/* ---------------DetaliiClub----------------------- */
+.istoric {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  margin-bottom: 68px;
+  padding: 4px;
+  align-items: center;
+  /* justify-content: center; */
+}
+.detalii-text {
+  width: 550px;
+  font-family: "Kameron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.viziune .detalii-text {
+  text-align: center;
+}
+.trofee .detalii-text {
+  text-align: center;
+}
+.viziune-trofee {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 3rem;
+}
+
+.titlu {
+  font-family: "Kameron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  text-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+}
+.viziune .detalii-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+.trofee .detalii-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}

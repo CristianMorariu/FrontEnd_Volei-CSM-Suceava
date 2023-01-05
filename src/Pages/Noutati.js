@@ -1,10 +1,13 @@
 import React from "react";
-
+import Footer from "../components/Footer";
 const Noutati = () => {
   return (
-    <div>
+    <>
       <h1>Noutati Page</h1>
-    </div>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 };
 

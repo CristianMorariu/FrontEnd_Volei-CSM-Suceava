@@ -14,6 +14,9 @@
   /* padding: 0 1rem; */
   border-bottom: var(--border);
   /* position: fixed; */
+  box-sizing: content-box;
+  padding-top: 0.8rem;
+  padding-bottom: 4px;
 }
 .navbar-nav {
   /* position: static; */
@@ -21,14 +24,15 @@
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin: 0 100px; /*trebuie sa scap de spatiul liber din fata logo-ului */
+
+  margin: 0 130px; /*trebuie sa scap de spatiul liber din fata logo-ului */
 }
 .nav-item {
   width: calc(var(--nav-size) * 1.3.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 .link-button {
   /* --buton-size: calc(var(var(--nav-size) * 0.5)); */

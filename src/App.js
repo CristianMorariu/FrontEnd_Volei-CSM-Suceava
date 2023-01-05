@@ -11,6 +11,7 @@ import VoleiJuvenil from "./Pages/VoleiJuvenil";
 function App() {
   return (
     <>
+      {/* asta cred ca pot sa-l duc in index.js */}
       <BrowserRouter>
         <Navbar />
         <Routes>

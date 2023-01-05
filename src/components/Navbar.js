@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <Navbarbody>
       <Link to="/" className="nav-item">
-        <img src="images/logo.png" alt="logo" />
+        <img src="images/CSM Suceava logo.png" alt="logo" />
       </Link>
       <NavItem link="/detaliiclub" name="Detalii Club" />
       <NavItem link="/calendarmeciuri" name="Calendar meciuri" />
@@ -62,6 +62,7 @@ const DropDownItem = (props) => {
   return (
     <li className="menu-item">
       <a href="#" className="link-button">
+        {/* aici in loc de a trebuie sa pun link si sa-i dau o cale */}
         {props.name}
       </a>
     </li>

@@ -6,7 +6,7 @@ const Cards = (props) => {
   return (
     <div className="cards">
       <div className="cards-container">
-        <ul className="cards-items">
+        <ul className={props.ulclass}>
           <h2 className="cards-title">{props.titlu}</h2>
           {props.children}
         </ul>
@@ -34,51 +34,66 @@ export const CardItem = (props) => {
     </li>
   );
 };
+const NoutatiCardItem = (props) => {
+  return (
+    <Link className="card-item-link-noutati" to={props.path}>
+      <li className={props.className}>
+        <div className="card-image">
+          <img className="card-item-img" src={props.src} alt="Stire" />
+        </div>
+        <div className="card-item-info">
+          <h4 className="card-item-titlu">{props.text}</h4>
+          <p className="noutati-text">{props.text2}</p>
+        </div>
+      </li>
+    </Link>
+  );
+};
 
 export const Noutati = () => {
   return (
     <>
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!"
         path="/noutati"
       />
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire2.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!"
         path="/noutati"
       />
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!"
         path="/noutati"
       />
 
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire2.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!"
         path="/noutati"
       />
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!"
         path="/noutati"
       />
-      <CardItem
+      <NoutatiCardItem
         className="cards-item"
         src="images/stire2.jpg"
         text="Titlu"
-        btn="Citeste mai mult"
+        text2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!"
         path="/noutati"
       />
     </>
@@ -101,22 +116,15 @@ export const Echipa = () => {
         btn="Vezi mai mult"
         path="/noutati"
       />
-      <CardItem
-        className="echipa"
-        src="images/jucator.png"
-        text="Arbitrii"
-        btn="Vezi mai mult"
-        path="/noutati"
-      />
     </>
   );
 };
 export const Parteneri = (props) => {
   return (
     <li className="parteneri-item">
-      <Link className="icon-link" to={props.path}>
+      <a className="icon-link" href={props.path}>
         <img src={props.icon} alt="" />
-      </Link>
+      </a>
     </li>
   );
 };
