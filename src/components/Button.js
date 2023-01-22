@@ -1,19 +1,20 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-const Button = ({ text }) => {
-  const Click = () => {
-    console.log("click");
-  };
+const Button = ({ buttonText, reqType, setReqType }) => {
   return (
-    <button onClick={Click} className="btn">
-      {text}
+    <button
+      className={buttonText === reqType ? "selected" : null}
+      type="button"
+      onClick={() => setReqType(buttonText)}
+    >
+      {buttonText}
     </button>
   );
 };
-Button.defaultProps = {
-  text: "Buton",
-};
-Button.prototype = {
-  text: PropTypes.string,
-};
+// Button.defaultProps = {
+//   text: "Buton",
+// };
+// Button.prototype = {
+//   text: PropTypes.string,
+// };
 export default Button;

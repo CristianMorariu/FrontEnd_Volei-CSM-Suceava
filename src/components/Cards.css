@@ -10,6 +10,7 @@
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  color: #fff;
 }
 .hero-component .card-item-img {
   height: 439px;

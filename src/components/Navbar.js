@@ -11,17 +11,17 @@ const Navbar = () => {
       <NavItem link="/detaliiclub" name="Detalii Club" />
       <NavItem link="/calendarmeciuri" name="Calendar meciuri" />
       <NavItem link="/personal" name="Personal">
-        <DropdownMenu>
+        {/* <DropdownMenu>
           <DropDownItem name="Salut" />
           <DropDownItem name="Salut2" />
-        </DropdownMenu>
+        </DropdownMenu> */}
       </NavItem>
       <NavItem link="/noutati" name="Noutati" />
       <NavItem link="/voleijuvenil" name="Volei Juvenil">
-        <DropdownMenu>
+        {/* <DropdownMenu>
           <DropDownItem name="Salut3" />
           <DropDownItem name="Salut4" />
-        </DropdownMenu>
+        </DropdownMenu> */}
       </NavItem>
     </Navbarbody>
   );
@@ -51,7 +51,7 @@ const NavItem = (props) => {
   );
 };
 
-const DropdownMenu = (props) => {
+/* const DropdownMenu = (props) => {
   return (
     <div className="dropdown">
       <ul>{props.children}</ul>
@@ -61,11 +61,10 @@ const DropdownMenu = (props) => {
 const DropDownItem = (props) => {
   return (
     <li className="menu-item">
-      <a href="#" className="link-button">
-        {/* aici in loc de a trebuie sa pun link si sa-i dau o cale */}
+      <Link to={"/"} className="link-button">
         {props.name}
-      </a>
+      </Link>
     </li>
   );
-};
+}; */
 export default Navbar;

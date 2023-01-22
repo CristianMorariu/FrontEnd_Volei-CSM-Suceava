@@ -75,6 +75,6 @@
   font-size: 32px;
   line-height: 49px;
   text-transform: capitalize;
-
+  z-index: -1;
   color: #000000;
 }
