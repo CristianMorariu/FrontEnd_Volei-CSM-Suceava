@@ -105,9 +105,10 @@
   object-fit: cover;
   transition: all 0.2s linear; */
 }
-.cards-item .card-image::before {
+.cards-item .data {
+  /* .card-image::before */
   /* content: attr(data-category); */
-  content: "Data";
+  /* content: "Data"; */
   position: absolute;
   left: 0;
   bottom: 0;

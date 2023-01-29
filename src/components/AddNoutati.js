@@ -9,14 +9,21 @@ const AddNoutati = ({ noutati, setNoutati }) => {
   const [image, setImage] = useState("");
   let navigate = useNavigate();
 
-  const imgSelectedHandler = (event) => {
-    setImage(event.target.files[0]);
+  const imgSelectedHandler = (e) => {
+    console.log(e.target.files);
+    setImage(URL.createObjectURL(e.target.files[0]));
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     const id = noutati.length ? noutati[noutati.length - 1].id + 1 : 1;
-    // const datetime = format(new Date(), "dd MM, yyyy pp");
-    const newPost = { id, title: title, textbody: body };
+    const datetime = format(new Date(), "dd MM, yyyy pp");
+    const newPost = {
+      id,
+      src: image,
+      datetime: datetime,
+      title: title,
+      body: body,
+    };
     const allPosts = [...noutati, newPost];
     setNoutati(allPosts);
     setTitile("");
@@ -48,6 +55,7 @@ const AddNoutati = ({ noutati, setNoutati }) => {
         />
         <input
           type="file"
+          accept="image/*"
           onChange={(e) => {
             imgSelectedHandler(e);
           }}

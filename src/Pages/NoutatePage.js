@@ -21,8 +21,11 @@ const NoutatePage = ({ noutati, setNoutati }) => {
           <>
             <div className="card-item-info">
               <h4 className="postTitle">{noutate.title}</h4>
-              {/* <p className="postDate">{noutate.datatime}</p> */}
-              <p className="postBody">{noutate.textBody}</p>
+              <p className="postDate">{noutate.datatime}</p>
+              <p className="postBody">{noutate.body}</p>
+            </div>
+            <div className="card-image">
+              <img className="card-item-img" src={noutate.src} alt="Stire" />
             </div>
             <button onClick={() => handleDelete(noutate.id)}>
               Delete Noutate

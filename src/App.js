@@ -18,42 +18,42 @@ function App() {
     {
       id: 1,
       src: "images/stire.jpg",
+      datetime: "23 08 2012 12:32",
       title: "Prima",
-      textBody:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!",
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!",
       // path: "/noutati",
     },
     {
       id: 2,
       src: "images/stire2.jpg",
+      datetime: "23 08 2012 12:32",
       title: "A doua",
-      textBody:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
       // path: "/noutati",
     },
     {
       id: 3,
       src: "images/stire2.jpg",
+      datetime: "23 08 2012 12:32",
       title: "A treia",
-      textBody:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
       // path: "/noutati",
     },
   ]);
-  // useEffect(() => {
-  //   const filteredResults = noutati.filter(
-  //     (noutate) =>
-  //       // console.log(noutate.textBody)
-  //       noutate.textBody.toLowerCase().includes(search.toLowerCase()) ||
-  //       noutate.title.toLowerCase().includes(search.toLowerCase())
-  //   );
-  //   setSearchResult(filteredResults.reverse());
-  // }, [noutati, search]);
+  useEffect(() => {
+    const filteredResults = noutati.filter(
+      (noutate) =>
+        // console.log(noutate.textBody)
+        noutate.body.toLowerCase().includes(search.toLowerCase()) ||
+        noutate.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setSearchResult(filteredResults.reverse());
+  }, [noutati, search]);
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home noutati={noutati} />} />
+        <Route path="/" element={<Home noutati={searchResult} />} />
         <Route path="/detaliiclub" element={<DetaliiClub />} />
         <Route path="/calendarmeciuri" element={<CalendarMeciuri />} />
         <Route path="/calendarmeciuri/:id" element={<CalendarMeciuri />} />
@@ -62,7 +62,7 @@ function App() {
           path="/noutati"
           element={
             <NoutatiPage
-              noutati={noutati}
+              noutati={searchResult}
               search={search}
               setSearch={setSearch}
             />
