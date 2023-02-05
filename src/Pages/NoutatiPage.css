@@ -1,5 +1,180 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+.searchForm {
+  width: 40%;
+  padding: 1rem 0 0 0.75rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.searchForm input[type="text"] {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.NewPost,
+.PostPage {
+  width: 90%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.Home .post a {
+  text-decoration: none;
+}
+
+.Home .post a,
+.Home .post a:visited {
+  color: #000;
+}
+
+.post:first-child {
+  margin-top: 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.postDate {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: #000;
+}
+.bodycontainer {
+  border: 4px solid black;
+  border-radius: 3px;
+  width: 100%;
+  height: 80%;
+  min-height: 50vh;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.postBody {
+  color: #333333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5625;
+  margin-bottom: 15px;
+}
+.postTitle {
+  font-family: "Enriqueta", arial, serif;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newPostForm label {
+  margin-top: 1rem;
+}
+.addNoutati {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
+  align-items: center;
+  right: 25px;
+  top: 220px;
+}
+.addNoutati button {
+  /* margin-top: 1rem; */
+  height: 40px;
+  min-width: 40px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  /* right: 50px; */
+  z-index: 34;
+}
+.addNoutati label {
+  color: #fff;
+  height: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* min-width: 48px; */
+}
+.newPostForm input[type="text"],
+.newPostForm textarea {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.newPostForm textarea {
+  height: 100px;
+}
+
+.newPostForm button {
+  margin-top: 1rem;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Missing h2,
+.PostPage h2,
+.Missing p,
+.PostPage p {
+  margin-bottom: 1rem;
+}
+.PostPage {
+  border-radius: 5px;
+}
+
+.PostPage button {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.statusMsg {
+  margin-top: 2rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 /* * {
   margin: 0;
   padding: 0;
@@ -72,10 +247,15 @@ body {
 } */
 
 .searchForm {
-  width: 40%;
-  padding: 1rem 0 0 0.75rem;
+  width: 100%;
+  padding-top: 1rem 0 0 0.75rem;
   margin-left: 20px;
   margin-top: 20px;
+  padding-left: 10rem;
+  padding-right: 2rem;
+}
+#labeltext {
+  opacity: 0.8;
 }
 
 .searchForm input[type="text"] {
@@ -84,8 +264,11 @@ body {
   min-height: 48px;
   font-size: 1rem;
   padding: 0.25rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   outline: none;
+  background: rgba(54, 56, 168, 0.3);
+  padding-right: 20rem;
+  transform: translateX(-100px);
 }
 
 .searchForm label {
@@ -141,7 +324,58 @@ body {
   margin-left: 5%;
   margin-top: 5%;
 }
+.nou {
+  display: inline-flex;
 
+  flex-direction: row;
+  width: 70rem;
+  padding-left: 13rem;
+}
+
+.add {
+  font-family: "Open Sans", sans-serif;
+  width: 4rem;
+  height: 3rem;
+  padding-top: 2rem;
+  min-height: 48px;
+  font-size: 1rem;
+  transform: translateY(20px);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background: rgba(54, 56, 168, 0.3);
+  opacity: 0.5;
+  border-color: antiquewhite;
+}
+.stire {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 36rem;
+  opacity: 0.9;
+}
+.Titlu,
+.labelNoutate {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.3rem;
+}
+.textNoutate,
+.textTitlu {
+  background: rgba(103, 109, 123, 0.629);
+}
+.AdaugaNoutate {
+  background: rgba(103, 109, 123, 0.629);
+  border-color: rgba(125, 122, 118, 0.652);
+}
+.imagine {
+  border-radius: 0.5rem;
+}
+.NewPost {
+  border-radius: 0.5rem;
+  background: rgba(78, 78, 97, 0.5);
+  border-width: 2rem;
+  border-color: antiquewhite;
+}
 .post {
   margin-top: 1rem;
   padding-bottom: 1rem;

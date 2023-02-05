@@ -10,36 +10,27 @@ import Personal from "./Pages/Personal";
 import VoleiJuvenil from "./Pages/VoleiJuvenil";
 import Missing from "./Pages/Missing";
 import AddNoutati from "./components/AddNoutati";
-
+import api from "./api/API";
+import EditNoutati from "./components/EditNoutati";
+import Jucator from "./Pages/Jucator";
+import Formular from "./Pages/Formular";
+import Login from "./Pages/Login";
 function App() {
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  const [noutati, setNoutati] = useState([
-    {
-      id: 1,
-      src: "images/stire.jpg",
-      datetime: "23 08 2012 12:32",
-      title: "Prima",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda, modi adipisci quisquam maiores ex doloribus ad, praesentium reiciendis qui fugiat!",
-      // path: "/noutati",
-    },
-    {
-      id: 2,
-      src: "images/stire2.jpg",
-      datetime: "23 08 2012 12:32",
-      title: "A doua",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
-      // path: "/noutati",
-    },
-    {
-      id: 3,
-      src: "images/stire2.jpg",
-      datetime: "23 08 2012 12:32",
-      title: "A treia",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus totam vero consequuntur sequi! Odit dolore exercitationem voluptate assumenda!",
-      // path: "/noutati",
-    },
-  ]);
+  const [noutati, setNoutati] = useState([]);
+
+  useEffect(() => {
+    const fetchNoutati = async () => {
+      try {
+        const response = await api.get("/noutati");
+        if (response && response.data) setNoutati(response.data);
+      } catch (err) {
+        console.log(`Error:${err.message}`);
+      }
+    };
+    fetchNoutati();
+  }, []);
   useEffect(() => {
     const filteredResults = noutati.filter(
       (noutate) =>
@@ -58,6 +49,7 @@ function App() {
         <Route path="/calendarmeciuri" element={<CalendarMeciuri />} />
         <Route path="/calendarmeciuri/:id" element={<CalendarMeciuri />} />
         <Route path="/personal" element={<Personal />} />
+        <Route path="/personal/jucator" element={<Jucator />} />
         <Route
           path="/noutati"
           element={
@@ -68,6 +60,7 @@ function App() {
             />
           }
         />
+
         <Route
           path="/noutati/:id"
           element={<NoutatePage noutati={noutati} setNoutati={setNoutati} />}
@@ -76,7 +69,13 @@ function App() {
           path="/noutati/create"
           element={<AddNoutati noutati={noutati} setNoutati={setNoutati} />}
         />
+        <Route
+          path="/noutati/edit/:id"
+          element={<EditNoutati noutati={noutati} setNoutati={setNoutati} />}
+        />
         <Route path="/voleijuvenil" element={<VoleiJuvenil />} />
+        <Route path="/inregistrare" element={<Formular />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Missing />} />
       </Routes>
     </div>

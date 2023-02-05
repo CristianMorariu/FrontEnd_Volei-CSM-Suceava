@@ -5,7 +5,7 @@ import MeciCardItem from "./MeciCardItem";
 const Meciuri = ({ classname, meciItemClassName, rezultate }) => {
   return (
     <div>
-      <Link className="link-meciuri" to="calendarmeciuri">
+      <Link className="link-meciuri" to="/calendarmeciuri">
         <ul className={classname}>
           {rezultate &&
             rezultate.map((rezultat) => (

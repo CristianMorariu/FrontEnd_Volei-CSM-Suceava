@@ -1,6 +1,7 @@
 import React from "react";
 import Meciuri, { MeciuriViitoare } from "../components/Meciuri";
 import { useState } from "react";
+import Footer from "../components/Footer";
 // import "..components/Meciuri.css";
 const CalendarMeciuri = () => {
   const [rezultate, setRezultate] = useState([
@@ -64,6 +65,9 @@ const CalendarMeciuri = () => {
         meciItemClassName="ora"
         meciuriViitoare={meciuriViitoare}
       />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

@@ -13,8 +13,6 @@ const NoutatiPage = ({ noutati, search, setSearch }) => {
   };
   return (
     <>
-      <h1>Noutati Page</h1>
-
       <form
         className="searchForm"
         onSubmit={(e) => {
@@ -30,15 +28,14 @@ const NoutatiPage = ({ noutati, search, setSearch }) => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </form>
-
-      <>
-        <label style={{ padding: "0 35px" }} htmlFor="addNoutate">
-          AddNoutate
+      <div className="addNoutati">
+        <label style={{ padding: "0 10px" }} htmlFor="addNoutate">
+          Adaugă o nouă știre
         </label>
         <button type="addNoutate" aria-label="AddNoutate" onClick={routeChange}>
           <FaPlus />
         </button>
-      </>
+      </div>
 
       {noutati.length ? (
         <NoutatiCardList
@@ -52,7 +49,7 @@ const NoutatiPage = ({ noutati, search, setSearch }) => {
         </p>
       )}
 
-      <footer>
+      <footer className="footer">
         <Footer />
       </footer>
     </>

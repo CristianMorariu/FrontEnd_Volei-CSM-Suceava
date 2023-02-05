@@ -1,0 +1,23 @@
+.imgjucator {
+  position: relative;
+  top: 8px;
+  left: -20px;
+}
+.imag1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* border: 1px red solid; */
+}
+.imag2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  /* border: 1px green solid; */
+}
+/* .infojucator {
+  display: flex;
+} */
+.content p {
+  display: inline;
+}

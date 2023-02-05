@@ -1,0 +1,64 @@
+.carte {
+  background-color: aliceblue;
+  border-radius: 0.24rem;
+  max-width: max-content;
+  display: inline-block;
+}
+.Imagine {
+  width: 100%;
+  height: 15rem;
+  transform: translateY(-2);
+}
+.Jucatori {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 0.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.3rem;
+  color: antiquewhite;
+}
+.Antrenori {
+  padding-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 0.25rem;
+
+  font-size: 1.3rem;
+  color: antiquewhite;
+}
+
+.Carte2 {
+  padding-top: 4rem;
+}
+.Carte4 {
+  padding-top: 3rem;
+}
+.Carte3 {
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+.linie2 {
+  padding-top: 0.24rem;
+}
+.linie1,
+.linie2 {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.Carte {
+  display: inline-block;
+  padding: 1rem;
+
+  padding-left: 10rem;
+}
+.Button1 {
+  padding-left: 30rem;
+}
+CardActionArea {
+  padding-left: 1rem;
+}
+
+.coloana1 {
+  display: inline-block;
+}

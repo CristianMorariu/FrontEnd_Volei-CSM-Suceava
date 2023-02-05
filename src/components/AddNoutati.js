@@ -3,6 +3,9 @@ import { useState } from "react";
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import "../Pages/NoutatiPage.css";
+import api from "../api/API";
+import axios from "axios";
+
 const AddNoutati = ({ noutati, setNoutati }) => {
   const [title, setTitile] = useState("");
   const [body, setBody] = useState("");
@@ -13,22 +16,27 @@ const AddNoutati = ({ noutati, setNoutati }) => {
     console.log(e.target.files);
     setImage(URL.createObjectURL(e.target.files[0]));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const id = noutati.length ? noutati[noutati.length - 1].id + 1 : 1;
-    const datetime = format(new Date(), "dd MM, yyyy pp");
+    const datetime = format(new Date(), "dd-MM-yyyy");
     const newPost = {
       id,
-      src: image,
+      src: "images/stire.jpg",
       datetime: datetime,
       title: title,
       body: body,
     };
-    const allPosts = [...noutati, newPost];
-    setNoutati(allPosts);
-    setTitile("");
-    setBody("");
-    navigate(`/noutati`);
+    try {
+      await api.post("/noutati", newPost);
+      const allPosts = [...noutati, newPost];
+      setNoutati(allPosts);
+      setTitile("");
+      setBody("");
+      navigate(`/noutati`);
+    } catch (err) {
+      console.log(`Error:${err.message}`);
+    }
   };
   return (
     <main className="NewPost">
@@ -63,20 +71,6 @@ const AddNoutati = ({ noutati, setNoutati }) => {
         <button type="submit">Submit</button>
       </form>
     </main>
-
-    // <form className="addForm">
-    //   <label htmlFor="addItem">AddNoutate</label>
-    //   <input
-    //     autoFocus
-    //     id="addNoutate"
-    //     type="text"
-    //     placeholder="Add Noutate"
-    //     required
-    //   />
-    //   <button type="submit" aria-label="AddNoutate">
-    //     <FaPlus />
-    //   </button>
-    // </form>
   );
 };
 

@@ -3,14 +3,31 @@ import { useState, useEffect } from "react";
 import HeroCardComponent from "../components/HeroCardComponent";
 import Footer from "../components/Footer";
 import Parteneri from "../components/Parteneri";
-import MeciuriAPI from "../apis/MeciuriAPI";
-import Meciuri from "../components/Meciuri";
+import api from "../api/API";
+import Meciuri, { MeciuriViitoare } from "../components/Meciuri";
 // import Form from "../components/Form";
 import NoutatiCardList from "../components/NoutatiCardList";
 import EchipaCardList from "../components/EchipaCardList";
 const Home = ({ noutati }) => {
   const [reqType, setReqType] = useState("meciuri");
-  const [meciuri, setMeciuri] = useState([]);
+  const [meciuri, setMeciuri] = useState([
+    {
+      id: 1,
+      dataMeci: "12.12.2022/Juniori",
+      logoGazda: "images/logo.png",
+      logoDeplasare: "images/logo2.png",
+      info: "1-2",
+    },
+  ]);
+  const [meciuriViitoare, setMeciuriViitoare] = useState([
+    {
+      id: 2,
+      dataMeci: "12.12.2022/Juniori",
+      logoGazda: "images/logo.png",
+      logoDeplasare: "images/logo2.png",
+      info: "4-3",
+    },
+  ]);
 
   const [echipa, setEchipa] = useState([
     {
@@ -18,20 +35,20 @@ const Home = ({ noutati }) => {
       src: "images/jucator.png",
       text: "Jucatori",
       btn: "Vezi mai mult",
-      path: "/noutati",
+      path: "/personal",
     },
     {
       id: 2,
-      src: "images/jucator.png",
+      src: "images/TudorOrasanu_172x147.jpg",
       text: "Antrenori",
       btn: "Vezi mai mult",
-      path: "/noutati",
+      path: "/personal",
     },
   ]);
-  useEffect(() => {
+  /*  useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await MeciuriAPI.get(reqType);
+        const response = await api.get(reqType);
         console.log(response.data);
         // const data = await response.json();
         setMeciuri(response.data);
@@ -40,7 +57,7 @@ const Home = ({ noutati }) => {
       }
     };
     fetchItems();
-  }, [reqType]);
+  }, [reqType]); */
 
   return (
     <>
@@ -49,10 +66,10 @@ const Home = ({ noutati }) => {
         <HeroCardComponent
           className="hero-component"
           src="images/prezentare.png"
-          text="Lotul Curent"
-          text2="CSM Volei Suceava"
+          text="CSM Volei Suceava"
+          text2="Despre noi"
           btn="Vezi mai mult"
-          path="/noutati"
+          path="/detaliiclub"
         />
       </header>
       <main>
@@ -83,11 +100,13 @@ const Home = ({ noutati }) => {
             </div>
             <div className="content">
               <h2>Urmatorul meci</h2>
-              {/* <MeciuriViitoare
-                meciItemClassName="ora"
-                meciuriViitoare={meciuriViitoare}
-                setmeciuriViitoare={setmeciuriViitoare}
-              /> */}
+              {
+                <MeciuriViitoare
+                  meciItemClassName="ora"
+                  meciuriViitoare={meciuriViitoare}
+                  setmeciuriViitoare={setMeciuriViitoare}
+                />
+              }
             </div>
           </div>
         </div>
