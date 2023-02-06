@@ -17,12 +17,12 @@ const Navbar = () => {
         </DropdownMenu> */}
       </NavItem>
       <NavItem link="/noutati" name="Noutati" />
-      <NavItem link="/voleijuvenil" name="Volei Juvenil">
-        {/* <DropdownMenu>
+      {/* <NavItem link="/voleijuvenil" name="Volei Juvenil"> */}
+      {/* <DropdownMenu>
           <DropDownItem name="Salut3" />
           <DropDownItem name="Salut4" />
         </DropdownMenu> */}
-      </NavItem>
+      {/* </NavItem> */}
     </Navbarbody>
   );
 };

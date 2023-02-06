@@ -1,5 +1,6 @@
 import React from "react";
 import "./Jucator.css";
+import Footer from "../components/Footer";
 const Jucator = () => {
   return (
     <div>
@@ -22,6 +23,9 @@ const Jucator = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

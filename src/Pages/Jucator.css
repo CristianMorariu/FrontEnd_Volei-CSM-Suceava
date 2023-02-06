@@ -15,9 +15,21 @@
   left: 30px;
   /* border: 1px green solid; */
 }
-/* .infojucator {
+.infojucator {
   display: flex;
-} */
-.content p {
-  display: inline;
+  position: absolute;
+  /* justify-content: center; */
+  right: 25rem;
+  top: 290px;
+}
+
+.nume {
+  color: white;
+  padding: 10px;
+}
+.datejucator {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  padding-top: 20px;
 }
